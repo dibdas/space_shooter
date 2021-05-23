@@ -7,6 +7,13 @@ export default class TitleScene extends Phaser.Scene {
   }
 
   preload () {
+    this.load.image('blueButton1', 'assets/ui/blue_button02.png');
+    this.load.image('blueButton2', 'assets/ui/blue_button03.png');
+
+this.load.image('phaserLogo', 'assets/logo.png');
+this.load.image('box', 'assets/ui/grey_box.png');
+this.load.image('checkedBox', 'assets/ui/blue_boxCheckmark.png');
+
   }
 
   create () {
@@ -20,6 +27,7 @@ export default class TitleScene extends Phaser.Scene {
     this.gameButton.on('pointerdown', function (pointer) {
       this.scene.start('Game');
     }.bind(this));
+    
 
     // Options
     this.optionsButton = this.add.sprite(300, 200, 'blueButton1').setInteractive();
@@ -51,7 +59,10 @@ export default class TitleScene extends Phaser.Scene {
       gameObjects[0].setTexture('blueButton1');
     });
   }
-    centerButton (gameObject, offset = 0) {
+
+
+  
+  centerButton (gameObject, offset = 0) {
     Phaser.Display.Align.In.Center(
       gameObject,
       this.add.zone(config.width/2, config.height/2 - offset * 100, config.width, config.height)
@@ -64,4 +75,5 @@ export default class TitleScene extends Phaser.Scene {
       gameButton
     );
     }
+    
 };
