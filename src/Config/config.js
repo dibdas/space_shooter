@@ -15,7 +15,8 @@ export default {
     arcade: {
       gravity: { x: 0, y: 0 }
     }
-  }
-    
+  },
+  pixelArt: true,
+  roundPixels: true
   
 };
