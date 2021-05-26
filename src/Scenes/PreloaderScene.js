@@ -1,5 +1,6 @@
 import 'phaser';
 
+
 export default class PreloaderScene extends Phaser.Scene {
   constructor () {
     super('Preloader');
@@ -87,7 +88,24 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.image('checkedBox', 'assets/ui/blue_boxCheckmark.png');
     this.load.audio('bgMusic', ['assets/techno.mp3']);
     this.load.image('ship','assets/ship.png');
+
+this.load.image("sprBtnPlay", "assets/sprBtnPlay.png");
+this.load.image("sprBtnPlayHover", "assets/sprBtnPlayHover.png");
+this.load.image("sprBtnPlayDown", "assets/sprBtnPlayDown.png");
+this.load.image("sprBtnRestart", "assets/sprBtnRestart.png");
+this.load.image("sprBtnRestartHover", "assets/sprBtnRestartHover.png");
+this.load.image("sprBtnRestartDown", "assets/sprBtnRestartDown.png");
+
+this.load.audio("sndBtnOver", "assets/sndBtnOver.wav");
+this.load.audio("sndBtnDown", "assets/sndBtnDown.wav");
+    
+    this.load.image("sprBtnRestart", "assets/sprBtnRestart.png");
+    
+    this.load.image("sprBtnRestart", "assets/sprBtnRestartDown.png");
+    
+    this.load.image("sprBtnRestart", "assets/sprBtnRestartHover.png");
   }
+
 
   ready () {
     this.scene.start('Title');
