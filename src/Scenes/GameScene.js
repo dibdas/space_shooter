@@ -94,13 +94,13 @@ export default class GameScene extends Phaser.Scene {
       this,
       this.game.config.width * 0.5,
       this.game.config.height * 0.5,
-      "sprPlayer"
+      "ship"
     );
 
-    this.keyW = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
-    this.keyS = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
-    this.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
-    this.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
+    this.keyup = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
+    this.keydown = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.DOWN);
+    this.keyright = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
+    this.keyleft = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
     this.keySpace = this.input.keyboard.addKey(
       Phaser.Input.Keyboard.KeyCodes.SPACE
     );
@@ -199,15 +199,15 @@ export default class GameScene extends Phaser.Scene {
     if (!this.player.getData("isDead")) {
       this.player.update();
 
-      if (this.keyW.isDown) {
+      if (this.keyup.isDown) {
         this.player.moveUp();
-      } else if (this.keyS.isDown) {
+      } else if (this.keydown.isDown) {
         this.player.moveDown();
       }
 
-      if (this.keyA.isDown) {
+      if (this.keyleft.isDown) {
         this.player.moveLeft();
-      } else if (this.keyD.isDown) {
+      } else if (this.keyright.isDown) {
         this.player.moveRight();
       }
 
@@ -242,7 +242,7 @@ export default class GameScene extends Phaser.Scene {
       }
     }
 
-    
+
 
     for (var i = 0; i < this.backgrounds.length; i++) {
       this.backgrounds[i].update();
