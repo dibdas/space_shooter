@@ -1,22 +1,25 @@
+import 'phaser';
+import ScrollingBackground from '../Objects/ScrollBackground';
+
 class GameOver extends Phaser.Scene {
     constructor() {
       super({ key: "SceneGameOver" });
     }
-    // create() {
+    create() {
   
-    //   this.title = this.add.text(this.game.config.width * 0.5, 128, "GAME OVER", {
-    //     fontFamily: 'monospace',
-    //     fontSize: 48,
-    //     fontStyle: 'bold',
-    //     color: '#ffffff',
-    //     align: 'center'
-    //   });
-    //   this.title.setOrigin(0.5);
+      this.title = this.add.text(this.game.config.width * 0.5, 128, "GAME OVER", {
+        fontFamily: 'monospace',
+        fontSize: 48,
+        fontStyle: 'bold',
+        color: 'black',
+        align: 'center'
+      });
+      this.title.setOrigin(0.5);
   
-    //   this.sfx = {
-    //     btnOver: this.sound.add("sndBtnOver"),
-    //     btnDown: this.sound.add("sndBtnDown")
-    //   };
+      this.sfx = {
+        btnOver: this.sound.add("sndBtnOver"),
+        btnDown: this.sound.add("sndBtnDown")
+      };
   
       this.btnRestart = this.add.sprite(
         this.game.config.width * 0.5,
@@ -42,12 +45,12 @@ class GameOver extends Phaser.Scene {
   
       this.btnRestart.on("pointerup", function() {
         this.btnRestart.setTexture("sprBtnRestart");
-        this.scene.start("SceneMain");
+        this.scene.start("Game");
       }, this);
   
       this.backgrounds = [];
       for (var i = 0; i < 5; i++) {
-        var keys = ["sprBg0", "sprBg1"];
+        var keys = ["sunny", "sun"];
         var key = keys[Phaser.Math.Between(0, keys.length - 1)];
         var bg = new ScrollingBackground(this, key, i * 10);
         this.backgrounds.push(bg);
@@ -60,3 +63,5 @@ class GameOver extends Phaser.Scene {
       }
     }
   }
+
+  export default GameOver;
