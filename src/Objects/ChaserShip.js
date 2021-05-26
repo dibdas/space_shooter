@@ -7,3 +7,4 @@ class ChaserShip extends Entity {
       this.body.velocity.y = Phaser.Math.Between(50, 100);
     }
   }
+  export default ChaserShip;
