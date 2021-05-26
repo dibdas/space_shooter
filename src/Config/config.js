@@ -6,11 +6,10 @@ export default {
   scale: {
     autoCenter: Phaser.Scale.CENTER_BOTH,
 
-  width: 800,
+  width: 700,
   height: 600
   },
-  backgroundColour: "orange",
-  physics: {
+    physics: {
     default: "arcade",
     arcade: {
       gravity: { x: 0, y: 0 }
