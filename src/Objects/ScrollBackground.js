@@ -2,11 +2,11 @@ import 'phaser';
 
 class ScrollingBackground {
     constructor(scene, key, velocityY) {
-//         this.scene = scene;
-// this.key = key;
-// this.velocityY = velocityY;
-// this.layers = this.scene.add.group();
-// this.createLayers();
+        this.scene = scene;
+this.key = key;
+this.velocityY = velocityY;
+this.layers = this.scene.add.group();
+this.createLayers();
 
       
     }
