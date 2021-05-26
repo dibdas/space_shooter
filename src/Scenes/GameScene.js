@@ -222,6 +222,28 @@ export default class GameScene extends Phaser.Scene {
       }
     }
 
+
+
+    for (var i = 0; i < this.enemies.getChildren().length; i++) {
+      var enemy = this.enemies.getChildren()[i];
+
+      enemy.update();
+
+      if (enemy.x < -enemy.displayWidth ||
+        enemy.x > this.game.config.width + enemy.displayWidth ||
+        enemy.y < -enemy.displayHeight * 4 ||
+        enemy.y > this.game.config.height + enemy.displayHeight) {
+        if (enemy) {
+          if (enemy.onDestroy !== undefined) {
+            enemy.onDestroy();
+          }
+          enemy.destroy();
+        }
+      }
+    }
+
+    
+
     for (var i = 0; i < this.backgrounds.length; i++) {
       this.backgrounds[i].update();
     }
