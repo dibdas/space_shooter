@@ -1,0 +1,16 @@
+.form {
+   
+    position:absolute;
+    width: 50%;
+    top: 80px;
+    left: 700px;
+    margin: auto;
+  }
+  
+  .name {
+    width: 190px;
+  }
+  
+  .hidden {
+    display: none;
+  }
