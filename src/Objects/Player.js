@@ -9,6 +9,7 @@ class Player extends Entity {
     this.setData("isShooting", false);
     this.setData("timerShootDelay", 10);
     this.setData("timerShootTick", this.getData("timerShootDelay") - 1);
+    this.setData('score', 0);
   }
 
   moveUp() {
@@ -26,6 +27,8 @@ class Player extends Entity {
   moveRight() {
     this.body.velocity.x = this.getData("speed");
   }
+
+
   update() {
     this.body.setVelocity(0, 0);
 
