@@ -1,10 +1,10 @@
-import 'phaser';
-import Entity from './Entities';
+import 'phaser'
+import Entity from './Entities'
 class EnemyLaser extends Entity {
     constructor(scene, x, y) {
-      super(scene, x, y, "sprLaserEnemy0");
-      this.body.velocity.y = 200;
+        super(scene, x, y, 'sprLaserEnemy0')
+        this.body.velocity.y = 200
     }
-  }
-  export default EnemyLaser
+}
+export default EnemyLaser
   
