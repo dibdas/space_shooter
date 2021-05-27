@@ -1,7 +1,6 @@
 'use strict'
-
-const webpack = require('webpack')
-const path = require('path')
+const webpack = require('webpack') // eslint-disable-line 
+const path = require('path')  // eslint-disable-line 
 
 module.exports = {
      
@@ -20,7 +19,14 @@ module.exports = {
             {
                 test: [ /\.vert$/, /\.frag$/ ],
                 use: 'raw-loader'
-            }
+            },
+            {
+                test: /\.css$/,
+                use: [
+                  'style-loader',
+                  'css-loader',
+                ],
+              }
         ]
     },
 
