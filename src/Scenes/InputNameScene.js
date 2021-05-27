@@ -9,6 +9,8 @@ export default class InputNameScene extends Phaser.Scene {
     
     create(){
         this.gameButton = new Button(this, config.scale.width/2, config.scale.height/2 - 100, 'blueButton1', 'blueButton2', 'Start', 'Game');
+
+    
     }
 
   centerButton (gameObject, offset = 0) {
