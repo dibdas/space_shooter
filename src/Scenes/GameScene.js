@@ -8,6 +8,9 @@ import ScrollingBackground from "../Objects/ScrollBackground";
 export default class GameScene extends Phaser.Scene {
   constructor() {
     super("Game");
+    this.score = 0;
+    this.value=0
+
   }
 
   preload() {
@@ -82,6 +85,18 @@ export default class GameScene extends Phaser.Scene {
       laser: this.sound.add("sndLaser"),
     };
 
+    // this.scoreScene = this.add.text(
+    //   this.game.config.width * 0.025,
+    //   this.game.config.height * 0.925,
+    //   `Score: ${this.player.getData('score')}`,
+    //   {
+    //     color: '#d0c600',
+    //     fontFamily: 'sans-serif',
+    //     fontSize: '3vw',
+    //     lineHeight: 1.3,
+    //   },
+    // );
+
     this.backgrounds = [];
     for (var i = 0; i < 5; i++) {
       var keys = ["sunny", "sun"];
@@ -145,6 +160,20 @@ export default class GameScene extends Phaser.Scene {
       loop: true,
     });
 
+    const scoreText = this.add.text(16, 16,`Score: ${this.value}`, { fontSize: '32px', fill: 'black' });
+    this.time.addEvent({
+      delay:1000,
+      callback:function(){
+        scoreText.setText(this.value)
+        this.value+=1;
+      },
+      callbackScope: this,
+      loop: true,
+
+
+
+    })
+
     this.physics.add.collider(
       this.playerLasers,
       this.enemies,
@@ -194,6 +223,8 @@ export default class GameScene extends Phaser.Scene {
     }
     return arr;
   }
+  
+
 
   update() {
     if (!this.player.getData("isDead")) {
