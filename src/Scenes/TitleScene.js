@@ -18,9 +18,7 @@ export default class TitleScene extends Phaser.Scene { // eslint-disable-line
     // Credits
     this.creditsButton = new Button(this, config.scale.width / 2, config.scale.height / 2 + 100, 'blueButton1', 'blueButton2', 'Credits', 'Credits');
 
-
     this.leaderboardButton = new Button(this, config.scale.width / 2, config.scale.height / 2 + 200, 'blueButton1', 'blueButton2', 'Board', 'Leaderboard');
-
 
     this.model = this.sys.game.globals.model;
     if (this.model.musicOn === true && this.model.bgMusicPlaying === false) {

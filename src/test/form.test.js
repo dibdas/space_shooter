@@ -18,5 +18,5 @@ describe('Help for scenes', () => {
     expect(Forms.children[0].placeholder).toBe('Please Enter Name');
     expect(Forms.children[0].getAttribute('type')).toBe('text');
     expect(Forms.children[1].getAttribute('type')).toBe('submit');
-  })
+  });
 });

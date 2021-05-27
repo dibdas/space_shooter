@@ -1,9 +1,7 @@
-
-//import Phaser from 'phaser';
+// import Phaser from 'phaser';
 import Leaderboard from '../Objects/LeaderBoard';
 import LeaderboardScene from '../Scenes/LeaboardScene';
 import 'regenerator-runtime/runtime';
-
 
 global.fetch = jest.fn(() => Promise.resolve({
   json: () => Promise.resolve({

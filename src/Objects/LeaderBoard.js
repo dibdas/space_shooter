@@ -1,6 +1,5 @@
 import 'regenerator-runtime/runtime';
 
-
 const leaderboard = (() => {
   const compare = (c, d) => {
     if (c.score > d.score) return -1;
@@ -32,7 +31,7 @@ const leaderboard = (() => {
   const displayedScore = async (scene) => {
     const Scores = await receivedScore();
     const ScoreList = Scores.result;
-    scoreList.sort(compare);
+    ScoreList.sort(compare);
     const size = ScoreList.length > 18 ? 18 : ScoreList.length;
     for (let i = 0; i < size; i += 1) {
       scene.add.text(640, 24 * i + 45, `${ScoreList[i].user} : ${ScoreList[i].score}`, { fontSize: 20 }).setOrigin(0.5);

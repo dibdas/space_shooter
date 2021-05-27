@@ -16,7 +16,7 @@ export default class LeaderboardScene extends Phaser.Scene {
       color: '#000',
       fontStyle: 'bold',
       padding: 5,
-      
+
     }).setOrigin(0.5);
 
     this.backButton = new Button(this, 540, 300, 'blueButton1', 'blueButton2', 'Back', 'Title');

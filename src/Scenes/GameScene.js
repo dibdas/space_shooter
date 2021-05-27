@@ -48,7 +48,7 @@ export default class GameScene extends Phaser.Scene {
 
   create() {
     Form.removeForm(this);
-    
+
     this.anims.create({
       key: 'sprEnemy0',
       frames: this.anims.generateFrameNumbers('sprEnemy0'),
@@ -163,10 +163,9 @@ export default class GameScene extends Phaser.Scene {
           enemy.explode(true);
           playerLaser.destroy();
           score += 10;
-          let scores = score;
+          const scores = score;
           scoreText.setText(`Score: ${scores}`);
-          console.log(score)
-          
+          console.log(score);
         }
       },
     );
@@ -179,7 +178,7 @@ export default class GameScene extends Phaser.Scene {
           player.explode(false);
           player.onDestroy();
           const { playerName } = this.sys.game.globals;
-          leaderboard.savedScore(playerName,scores)
+          leaderboard.savedScore(playerName, scores);
           enemy.explode(true);
         }
       },
