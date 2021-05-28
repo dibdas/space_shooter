@@ -1,5 +1,7 @@
 import Phaser from 'phaser';
 import ScrollingBackground from '../Objects/ScrollBackground';
+import Button from '../Objects/Button';
+import config from '../Config/config';
 
 class GameOver extends Phaser.Scene {
   constructor() {
@@ -47,7 +49,7 @@ class GameOver extends Phaser.Scene {
       this.btnRestart.setTexture('sprBtnRestart');
       this.scene.start('Game');
     }, this);
-
+    this.gameButton = new Button(this, config.scale.width / 2, config.scale.height / 2 - 100, 'blueButton1', 'blueButton2', 'End', 'Leaderboard');
     this.backgrounds = [];
     for (let i = 0; i < 5; i += 1) {
       const keys = ['sunny', 'sun'];

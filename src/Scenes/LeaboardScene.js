@@ -10,7 +10,7 @@ export default class LeaderboardScene extends Phaser.Scene {
 
   create() {
     Form.removeForm(this);
-    Leaderboard.displayScore(this);
+    Leaderboard.displayedScore(this);
     this.add.text(540, 25, 'Leaderboard', {
       fontSize: 35,
       color: '#000',
