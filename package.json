@@ -9,8 +9,10 @@
     "start": "webpack serve"
   },
   "jest": {
-    "setupFiles": ["jest-canvas-mock"]
-},
+    "setupFiles": [
+      "jest-canvas-mock"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://scottwestover@bitbucket.org/creativerendering/phaser3-template.git"
@@ -25,6 +27,7 @@
     "@babel/core": "^7.14.2",
     "@babel/preset-env": "^7.14.2",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.0.1",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
     "dotenv-webpack": "^7.0.2",

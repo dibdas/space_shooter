@@ -43,20 +43,20 @@ describe('Leaderboard', () => {
   });
 
   test('saves the score and playerName to the leaderBoard', () => {
-    Leaderboard.saveScore('shooter', 1000).then((score) => expect(score.result).toBe('Leaderboard score create correctly.'));
+    Leaderboard.savedScore('shooter', 1000).then((score) => expect(score.result).toBe('Leaderboard score create correctly.'));
   });
 
   test('Receives/Loads the scores', async () => {
-    const scores = await Leaderboard.receiveScore();
+    const scores = await Leaderboard.receivedScore();
     expect(scores.result).toBeTruthy();
   });
 
   test('get score and playerName from the leaderBoard', () => {
-    Leaderboard.receiveScore().then((scores) => expect(typeof scores).toEqual('object'));
+    Leaderboard.receivedScore().then((scores) => expect(typeof scores).toEqual('object'));
   });
 
   test('Ranking contains the Player', () => {
-    Leaderboard.receiveScore()
+    Leaderboard.receivedScore()
       .then((data) => {
         expect(data).toEqual(
           expect.arrayContaining([
