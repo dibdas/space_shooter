@@ -1,4 +1,4 @@
-import 'phaser';
+import 'phaser'; 
 
 export default {
   type: Phaser.AUTO, // eslint-disable-line 

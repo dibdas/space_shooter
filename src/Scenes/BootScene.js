@@ -1,4 +1,6 @@
-import Phaser from 'phaser';
+
+
+import Phaser from 'phaser'; // eslint-disable-line 
 
 export default class BootScene extends Phaser.Scene {
   constructor() {
@@ -6,7 +8,7 @@ export default class BootScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('logo', 'assets/logo.png');
+    this.load.image('logo', 'dist/assets/logo.png');
   }
 
   create() {
