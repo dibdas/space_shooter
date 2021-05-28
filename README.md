@@ -24,6 +24,9 @@ Run next commands in your terminal:
 - HTML 5 and CSS 3
 - Leaderboard API
 
+## Live Demo
+[Live Demo Link](https://dibdas.github.io/space_shooter/)
+
 ## How To Play<a name = "play"></a>
 
 ```
@@ -36,7 +39,20 @@ Run next commands in your terminal:
 ```
 ~~~
 
-## ✒️  Authors <a name = "author"></a>
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+- Run `git clone https://github.com/dibdas/space_shooter.git` in your terminal to clone this repo.
+- `cd treasure-hunter`
+- Install the necesarry dependencies by running `npm install`.
+- Run `npm run start` to view the game in your default browser.
+
+To run the test
+
+- Run `npm test` to run the tests.
+
+## Author
 
 
 👤 **Dibyendu Das**
