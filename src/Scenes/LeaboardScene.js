@@ -11,7 +11,9 @@ export default class LeaderboardScene extends Phaser.Scene {
   create() {
     Form.removeForm(this);
     Leaderboard.displayedScore(this);
-    this.add.text(540, 25, 'Leaderboard', {
+    this.add.text(640, 25, 'Leaderboard', {
+      type: Phaser.AUTO,
+      autoCenter: Phaser.Scale.CENTER_BOTH,
       fontSize: 35,
       color: '#000',
       fontStyle: 'bold',
@@ -19,6 +21,6 @@ export default class LeaderboardScene extends Phaser.Scene {
 
     }).setOrigin(0.5);
 
-    this.backButton = new Button(this, 540, 300, 'blueButton1', 'blueButton2', 'Back', 'Title');
+    this.backButton = new Button(this, 350, 540, 'blueButton1', 'blueButton2', 'Back', 'Title');
   }
 }
