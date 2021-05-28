@@ -2,7 +2,7 @@ import 'phaser';
 import config from '../Config/config';
 import Button from '../Objects/Button';
 import Form from '../Objects/PlayerForm';
-import '../../dist/assets/css/style.css';
+import '../../assets/css/style.css';
 
 export default class TitleScene extends Phaser.Scene { // eslint-disable-line 
   constructor() {

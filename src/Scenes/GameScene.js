@@ -15,35 +15,35 @@ export default class GameScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('sprBg0', '../../dist/assets/sprBg0.png');
-    this.load.image('sprBg1', '../../dist/assets/sprBg1.png');
-    this.load.image('sun', '../../dist/assets/sun.png');
-    this.load.image('sunny', '../../dist/assets/sunny.png');
-    this.load.image('sprPlayer', '../../dist/assets/sprPlayer.png');
-    this.load.spritesheet('sprExplosion', '../../dist/assets/sprExplosion.png', {
+    this.load.image('sprBg0', '../../assets/sprBg0.png');
+    this.load.image('sprBg1', '../../assets/sprBg1.png');
+    this.load.image('sun', '../../assets/sun.png');
+    this.load.image('sunny', '../../assets/sunny.png');
+    this.load.image('sprPlayer', '../../assets/sprPlayer.png');
+    this.load.spritesheet('sprExplosion', '../../assets/sprExplosion.png', {
       frameWidth: 36,
       frameHeight: 32,
     });
-    this.load.spritesheet('sprEnemy0', '../../dist/assets/sprEnemy0.png', {
+    this.load.spritesheet('sprEnemy0', '../../assets/sprEnemy0.png', {
       frameWidth: 16,
       frameHeight: 16,
     });
-    this.load.image('sprEnemy1', '../../dist/assets/sprEnemy1.png');
-    this.load.spritesheet('sprEnemy2', '../../dist/assets/sprEnemy2.png', {
+    this.load.image('sprEnemy1', '../../assets/sprEnemy1.png');
+    this.load.spritesheet('sprEnemy2', '../../assets/sprEnemy2.png', {
       frameWidth: 16,
       frameHeight: 16,
     });
-    this.load.image('sprLaserEnemy0', '../../dist/assets/sprLaserEnemy0.png');
-    this.load.image('sprLaserPlayer', '../../dist/assets/sprLaserPlayer.png');
-    this.load.spritesheet('ship', '../../dist/assets/ship.png', {
+    this.load.image('sprLaserEnemy0', '../../assets/sprLaserEnemy0.png');
+    this.load.image('sprLaserPlayer', '../../assets/sprLaserPlayer.png');
+    this.load.spritesheet('ship', '../../assets/ship.png', {
       frameWidth: 16,
       frameHeight: 16,
     });
     // sound
 
-    this.load.audio('sndExplode0', '../../dist/assets/sndExplode0.wav');
-    this.load.audio('sndExplode1', '../../dist/assets/sndExplode1.wav');
-    this.load.audio('sndLaser', '../../dist/assets/sndLaser.wav');
+    this.load.audio('sndExplode0', '../../assets/sndExplode0.wav');
+    this.load.audio('sndExplode1', '../../assets/sndExplode1.wav');
+    this.load.audio('sndLaser', '../../assets/sndLaser.wav');
   }
 
   create() {
