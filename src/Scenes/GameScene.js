@@ -40,7 +40,6 @@ export default class GameScene extends Phaser.Scene {
       frameHeight: 16,
     });
     // sound
-
     this.load.audio('sndExplode0', '../../assets/sndExplode0.wav');
     this.load.audio('sndExplode1', '../../assets/sndExplode1.wav');
     this.load.audio('sndLaser', '../../assets/sndLaser.wav');
@@ -165,7 +164,6 @@ export default class GameScene extends Phaser.Scene {
           score += 10;
           const scores = score;
           scoreText.setText(`Score: ${scores}`);
-          console.log(score);
         }
       },
     );

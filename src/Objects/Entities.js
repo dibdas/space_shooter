@@ -25,7 +25,7 @@ class Entity extends Phaser.GameObjects.Sprite { // eslint-disable-line
       }
       this.setAngle(0);
       this.body.setVelocity(0, 0);
-      this.on('animationcomplete', function () {
+      this.on('animationcomplete', function () {  // eslint-disable-line 
         if (canDestroy) {
           this.destroy();
         } else {

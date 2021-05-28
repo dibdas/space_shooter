@@ -40,7 +40,7 @@ export default class CreditsScene extends Phaser.Scene {
       ease: 'Power1',
       duration: 8000,
       delay: 1000,
-      onComplete: function () {
+      onComplete: function () {  // eslint-disable-line 
         this.madeByTween.destroy; // eslint-disable-line 
         this.scene.start('Title');
       }.bind(this),

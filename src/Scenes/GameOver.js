@@ -31,21 +31,21 @@ class GameOver extends Phaser.Scene {
 
     this.btnRestart.setInteractive();
 
-    this.btnRestart.on('pointerover', function () {
+    this.btnRestart.on('pointerover', function () {  // eslint-disable-line 
       this.btnRestart.setTexture('sprBtnRestartHover'); // set the button texture to sprBtnPlayHover
       this.sfx.btnOver.play(); // play the button over sound
     }, this);
 
-    this.btnRestart.on('pointerout', function () {
+    this.btnRestart.on('pointerout', function () {  // eslint-disable-line 
       this.setTexture('sprBtnRestart');
     });
 
-    this.btnRestart.on('pointerdown', function () {
+    this.btnRestart.on('pointerdown', function () {  // eslint-disable-line 
       this.btnRestart.setTexture('sprBtnRestartDown');
       this.sfx.btnDown.play();
     }, this);
 
-    this.btnRestart.on('pointerup', function () {
+    this.btnRestart.on('pointerup', function () {  // eslint-disable-line 
       this.btnRestart.setTexture('sprBtnRestart');
       this.scene.start('Game');
     }, this);
