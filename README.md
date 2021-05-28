@@ -17,7 +17,7 @@ Run next commands in your terminal:
 | `npm start` | Launch browser to show the examples. <br> Press `Ctrl + c` to kill **http-server** process. |
 =======
 
-## 🔧 Built with<a name = "with"></a>
+## 🔧 Built with
 
 - JavaScript
 - Phaser 3
@@ -53,7 +53,6 @@ To run the test
 - Run `npm test` to run the tests.
 
 ## Author
-
 
 👤 **Dibyendu Das**
 - Github: [@dibdas](https://github.com/dibdas)
