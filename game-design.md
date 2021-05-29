@@ -5,7 +5,7 @@
 
 - Dev: [Dibyendu Das](https://github.com/dibdas)
 - Design: [Dibyendu Das](https://github.com/dibdas)
-- QA: [Murodjon Tursunpulatov](https://github.com/dibdas)
+- QA: [Dibyendu Das](https://github.com/dibdas)
 
 # Overview
 
