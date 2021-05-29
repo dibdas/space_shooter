@@ -3,7 +3,7 @@
 **🎮️ Name of the game: Shooter Game!\
 👥 Stakeholders:**
 
-- Dev: [Murodjon Tursunpulatov](https://github.com/dibdas)
+- Dev: [Dibyendu Das](https://github.com/dibdas)
 - Design: [Murodjon Tursunpulatov](https://github.com/dibdas)
 - QA: [Murodjon Tursunpulatov](https://github.com/dibdas)
 
