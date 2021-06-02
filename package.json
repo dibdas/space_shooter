@@ -1,0 +1,53 @@
+{
+  "name": "space",
+  "version": "1.0.9",
+  "description": "space",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "start": "webpack serve"
+  },
+  "jest": {
+    "setupFiles": [
+      "jest-canvas-mock"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://scottwestover@bitbucket.org/creativerendering/phaser3-template.git"
+  },
+  "license": "MIT",
+  "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+  "bugs": {
+    "url": "https://github.com/photonstorm/phaser3-project-template/issues"
+  },
+  "homepage": "https://github.com/photonstorm/phaser3-project-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.0.1",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "dotenv-webpack": "^7.0.2",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.3",
+    "jest": "^26.6.3",
+    "jest-canvas-mock": "^2.3.1",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^2.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.19.0"
+  },
+  "dependencies": {
+    "phaser": "^3.3.0",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "regenerator-runtime": "^0.13.7"
+  }
+}
