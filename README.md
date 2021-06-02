@@ -1,6 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## JavaScript Capstone Project: Build a Shooter Game
+This project's objective is to build a shooter game similar to York Computer's tutorial. So I used the main idea to create shooter game.
 
 ![Shooter Game](../../assets/s1.png)
 
